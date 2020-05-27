@@ -21,6 +21,7 @@ if (request.getMethod().equals("POST") && username != null) {
 			String userid = "" + rs.getInt("userid");
 			session.setAttribute("username", rs.getString("name").sanitize_XSS());
 			//another change
+			//another change
 			session.setAttribute("userid", userid);
 			session.setAttribute("usertype", rs.getString("type"));
 
