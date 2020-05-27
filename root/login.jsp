@@ -19,9 +19,7 @@ if (request.getMethod().equals("POST") && username != null) {
 			// We must have been given the right credentials, right? ;)
 			// Put credentials in the session
 			String userid = "" + rs.getInt("userid");
-			session.setAttribute("username", rs.getString("name").sanitize_XSS());
-			//another change
-			//another change
+			session.setAttribute("username", rs.getString("name"));
 			session.setAttribute("userid", userid);
 			session.setAttribute("usertype", rs.getString("type"));
 
