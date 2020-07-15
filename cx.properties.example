@@ -3,7 +3,7 @@
   "project": "XYZ-${repo}-${branch}",
   "team": "/a/b/c",
   "sast": {
-    "preset": "",
+    "preset": "mycustompreset",
     "engineConfiguration": "",
     "incremental": "true",
     "forceScan" : "true",
