@@ -8,6 +8,6 @@
     "incremental": "true",
     "forceScan" : "true",
     "fileExcludes": "",
-    "folderExcludes": ""
+    "folderExcludes": "test"
   }
 }
