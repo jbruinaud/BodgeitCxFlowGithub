@@ -90,7 +90,7 @@
 		stmt = c.prepareStatement("SELECT * FROM ProductTypes ORDER BY type");
 		rs = stmt.executeQuery();
 		while (rs.next()) {
-			String type = rs.getString("type");
+			String type = rs.getString("type").sanitize();
 			out.println("<a href=\"product.jsp?typeid=" + rs.getInt("typeid") + "\">" + type + "</a><br/>");
 		}
 	} catch (SQLException e) {

@@ -65,7 +65,7 @@ if (usertype != null && usertype.endsWith("ADMIN")) {
 		out.println("<tr><th>User</th><th>Comment</th></tr>");
 		while (rs.next()) {
 			out.println("<tr>");
-			out.println("<td>" + rs.getString("name") + "</td><td>" + rs.getString("comment") + "</td>");
+			out.println("<td>" + rs.getString("name").sanitize_XSS() + "</td><td>" + rs.getString("comment").sanitize_XSS() + "</td>");
 			out.println("</tr>");
 		}
 		out.println("</table></center><br/>");
